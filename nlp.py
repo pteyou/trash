@@ -2,17 +2,18 @@
 
 from nltk.tokenize import TreebankWordTokenizer
 import nltk
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
 from nltk.util import ngrams
 from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS as sklearn_stop_words
 from nltk.stem.porter import PorterStemmer
-nltk.download('wordnet')
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 from nltk.corpus import wordnet
 import numpy as np
 
+
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
 lemmatizer = WordNetLemmatizer()
 stemmer = PorterStemmer()
 nltk.download('stopwords')
